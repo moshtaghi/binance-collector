@@ -1,0 +1,38 @@
+{
+  "name": "binance-data-collector",
+  "version": "1.0.0",
+  "description": "Script for storing binance data in PostgreSQL",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "rm -rf dist && tsc",
+    "init": "rm -rf dist && tsc && node dist/init.js",
+    "candles": "rm -rf dist && tsc && node dist/getCandles.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:moshtaghi/binance-collector.git"
+  },
+  "keywords": [
+    "crypto",
+    "binance",
+    "postgres",
+    "binance"
+  ],
+  "author": "Mehdi Moshtaghi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/moshtaghi/binance-collector/issues"
+  },
+  "homepage": "https://github.com/moshtaghi/binance-collector#readme",
+  "dependencies": {
+    "binance-api-node": "^0.11.28",
+    "pg": "^8.7.1",
+    "pg-format": "^1.0.4",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@types/pg": "^8.6.3",
+    "@types/pg-format": "^1.0.2"
+  }
+}
