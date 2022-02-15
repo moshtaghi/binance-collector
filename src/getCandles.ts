@@ -22,7 +22,7 @@ import { v4 as uuidv4 } from 'uuid';
   const symbol = process.argv[2];
   const startTime = new Date(process.argv[3]).getTime();
   const endTime = new Date(process.argv[4]).getTime();
-  const interval = process.argv[4] as CandleChartInterval;
+  const interval = process.argv[5] as CandleChartInterval;
 
   const client = new Client({
     user: 'postgres',
